@@ -1,0 +1,101 @@
+@import url('https://rsms.me/inter/inter.css');
+@font-face {
+  font-family: 'Bigilla Regular';
+  src:  url('BigillaRegular.woff') format('woff2'),
+        url('BigillaRegular.woff2') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #3CD184;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+input[type='range'] {
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: black;
+  border-radius: 5px;
+  width: 100%;
+  height: 2px;
+  outline: 0;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #000;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+input[type='range']::-webkit-slider-thumb:active {
+  transform: scale(1);
+}
+
+/* 
+Search bar
+*/
+.search {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  height: 4rem;
+}
+
+.label,
+.label-sm{
+  position: absolute;
+  top: 50%;
+  color: #7b7684;
+  pointer-events: none;
+  transition: all 0.35s;
+}
+.label{
+  left: 0;
+  transform: translate(0,-50%);
+}
+
+
+input {
+  height: inherit;
+  width: 16rem;
+  border: 0;
+  border-bottom: 1px solid #2e2a33;
+  border-top: 1px solid #2e2a33;
+  outline:none;
+  background: transparent;
+  color: #f7f7f7;
+  font-size: 1rem;
+  transition: all 0.35s;
+}
+
+input:focus{
+  border-bottom-color: #1ac0a2;
+}
+
+input:focus ~ .label {
+  opacity: 0;
+  transform: translate(-3rem,-50%);
+}
+
+
