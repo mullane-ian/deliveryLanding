@@ -11,7 +11,7 @@ export default function Overlay() {
         <h1>
           WEED
           <br />
-          on WHEELS 
+          ON WHEELS 
         </h1>
         <p>PREMIUM CANNABIS DELIVERED DIRECTLY TO YOUR DOOR —</p>
 
