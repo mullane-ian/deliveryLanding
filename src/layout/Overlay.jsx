@@ -15,9 +15,9 @@ export default function Overlay() {
         </h1>
         <p>PREMIUM CANNABIS DELIVERED DIRECTLY TO YOUR DOOR —</p>
 
-    <div class='search'>
+    <div className='search'>
       <input />
-      <span class='label'>{text}</span>
+      <span className='label'>{text}</span>
     
     </div>
         <VelvetBanana />

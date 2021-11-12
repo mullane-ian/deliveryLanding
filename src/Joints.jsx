@@ -34,6 +34,7 @@ function Joint({ index, z, speed }) {
 
   // useFrame executes 60 times per second
   useFrame((state, dt) => {
+    
     // Make the X position responsive, slowly scroll objects up at the Y, distribute it along the Z
     // dt is the delta, the time between this frame and the previous, we can use it to be independent of the screens refresh rate
     // We cap dt at 0.1 because now it can't accumulate while the user changes the tab, it will simply stop

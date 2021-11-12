@@ -3,12 +3,12 @@ import styled from 'styled-components'
 export const Image = styled.svg`
   position: fixed;
   top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  left: 70%;
+  transform: translate3d(-50%, -50%, 0) rotate(20deg);
   width: 100%;
   height: 100%;
   pointer-events: none;
-
+  opacity: 0.5;
 `
 
 export function VelvetBanana() {
